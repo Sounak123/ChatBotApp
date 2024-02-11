@@ -14,18 +14,19 @@ function getAnswer(query, response_body) {
       body: JSON.stringify(postData)
     };
     // Make a POST request using Fetch API
-    return fetch(URL, fetchOptions)
+    fetch(URL, fetchOptions)
       .then(function(response) {
         if (!response.ok) {
           // Handle errors if the response is not OK (status 200-299)
           throw new Error('Network response was not ok');
         }
         // Parse the response JSON
-        response_body.textContent = response;
+        return response.text()
       })
       .then(function(data) {
         // Handle the data received
         console.log('Response:', data);
+        response_body.textContent = data;
       })
       .catch(function(error) {
         // Handle any errors during the request or processing
