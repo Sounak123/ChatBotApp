@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat UI</title>
+<link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Chat</h2>
+    </div>
+    <div class="chat-messages">
+      </div>
+    <div class="chat-input">
+      <form id="chat-form">
+        <input type="text" id="chat-message" placeholder="Enter your message">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    const URL='{{ url_for('search') }}';
+    console.log(URL);
+  </script>
+  <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html>
