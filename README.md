@@ -23,3 +23,8 @@ This is a simple chat application built using Python FastAPI for the backend, Ch
 
    ```bash
    git clone https://github.com/your-username/your-repository.git
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
