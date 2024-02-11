@@ -22,7 +22,7 @@ This is a simple chat application built using Python FastAPI for the backend, Ch
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Sounak123/ChatBotApp.git
 
 2. Install dependencies:
 
